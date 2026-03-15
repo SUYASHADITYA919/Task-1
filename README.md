@@ -1,5 +1,5 @@
 # Task-1
-Deployed LINK- 
+Deployed LINK- https://suyashaditya919.github.io/Task-1/
 
 My Quizzo 🧠
 My Quizzo is a sleek, responsive, and interactive quizzing application designed to provide a seamless user experience.
