@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quizzo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-accent-shape">
+    </div>
+    <div id="quiz-container" class="quiz-card w-full max-w-md bg-[#1a2a44] rounded-[40px] shadow-2xl overflow-hidden border border-gray-700 relative min-h-[700px] flex flex-col">
+        <div class="p-8 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="logo-icon w-10 h-10 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl">MQ</div>
+                <span class="text-white font-bold tracking-widest uppercase">My Quizzo</span>
+            </div>
+        </div>
+        <div id="display-area" class="flex-grow px-8 pb-8 flex flex-col">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

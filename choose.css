@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    overflow-x: hidden;
+}
+
+.bg-accent-shape {
+    position: fixed;
+    bottom: -60px;
+    left: -60px;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(135deg, #bff900 50%, #f472b6 50%);
+    transform: rotate(-15deg);
+    z-index: -1;
+    border-radius: 50px;
+}
+
+
+svg {
+    transform: rotate(-90deg); 
+}
+
+.option-btn.selected .checkbox-circle i {
+    transform: scale(1); 
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.option-btn.selected {
+    border-color: #facc15; 
+    background-color: rgba(250, 204, 21, 0.05); 
+}
+
+
+.option-btn.selected .checkbox-circle {
+    border-color: #facc15;
+}
+
+.option-btn.selected .checkbox-circle i {
+    scale: 1;
+}
+
+
+.option-btn.selected:hover {
+    background-color: rgba(250, 204, 21, 0.1);
+    transform: translateY(-1px);
+}
+
+.option-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option-btn:hover {
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.progress-ring__circle {
+    transition: stroke-dashoffset 1s ease-out;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.animate-pop {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

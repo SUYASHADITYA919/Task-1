@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzMaster...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="bg-accent-shape"></div>
+    <div id="quiz-container" class="quiz-card w-full max-w-md bg-[#1a2a44] rounded-[40px] shadow-2xl overflow-hidden border border-gray-700 relative min-h-[700px] flex flex-col">
+        <div class="p-8 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="logo-icon w-10 h-10 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl">MQ</div>
+                <span class="text-white font-bold tracking-widest uppercase">My Quizzo</span>
+            </div>
+        </div>
+        <div id="display-area" class="flex-grow px-8 pb-8 flex flex-col">
+                <h2 class="text-2xl font-bold text-white mb-6">Create An Account</h2>
+                <div class="relative border-b border-gray-600 focus-within:border-yellow-400 transition-colors mb-6">
+                     <div class="absolute inset-y-0 left-0 flex items-center">
+                        <div class="bg-yellow-400/20 p-2 rounded-lg text-yellow-400">
+                        <i class="fas fa-user"></i></div>
+                     </div>
+                     <input type="text" value="" placeholder="Name" class="w-full bg-transparent py-4 pl-14 text-white focus:outline-none">
+                </div>
+                <div class="relative border-b border-gray-600 focus-within:border-yellow-400 transition-colors mb-6">
+                     <div class="absolute inset-y-0 left-0 flex items-center">
+                        <div class="bg-red-400/20 p-2 rounded-lg text-red-400">
+                        <i class="fas fa-user"></i></div>
+                     </div>
+                     <input type="text" value="" placeholder="Create username" class="w-full bg-transparent py-4 pl-14 text-white focus:outline-none">
+                </div>
+                <div class="relative border-b border-gray-600 focus-within:border-yellow-400 transition-colors mb-6">
+                     <div class="absolute inset-y-0 left-0 flex items-center">
+                        <div class="bg-yellow-400/20 p-2 rounded-lg text-yellow-400">
+                            <i class="fas fa-lock"></i></div>
+                     </div>
+                     <input type="password" value="" placeholder="Set password" class="w-full bg-transparent py-4 pl-14 text-white focus:outline-none">
+                     <span class="toggle-password absolute right-0 top-1/2 -translate-y-1/2 p-2 cursor-pointer text-gray-400 hover:text-white">
+                        <i class="fas fa-eye"></i>
+                     </span>
+                </div>
+                <div class="relative border-b border-gray-600 focus-within:border-yellow-400 transition-colors mb-6">
+                     <div class="absolute inset-y-0 left-0 flex items-center">
+                        <div class="bg-pink-500/20 p-2 rounded-lg text-pink-500">
+                        <i class="fas fa-lock"></i></div>
+                     </div>
+                     <input type="email" value="" placeholder="Email" class="w-full bg-transparent py-4 pl-14 text-white focus:outline-none">
+                </div>
+                <div class="relative border-b border-gray-600 focus-within:border-yellow-400 transition-colors mb-6">
+                     <div class="absolute inset-y-0 left-0 flex items-center">
+                        <div class="bg-green-500/20 p-2 rounded-lg text-green-500">
+                        <i class="fas fa-phone"></i></div>
+                     </div>
+                     <input type="number" value="" placeholder="Contact Number" class="w-full bg-transparent py-4 pl-14 text-white focus:outline-none">
+                </div>
+        
+            <button class="border-2 text-white border-2 items-center hover:bg-white hover:text-[#1a2a44] transition-all rounded-full">
+                <a href='index.html'>Create Account</a>
+                <i class="fas fa-arrow-right text-xs"></i>
+            </button>
+        </div>    
+    </div>
+    <script src="create.js"></script>
+</body>
+</html>

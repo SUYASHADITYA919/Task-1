@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quizzo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-accent-shape"></div>
+    
+    <div id="quiz-container" class="quiz-card w-full max-w-md bg-[#1a2a44] rounded-[40px] shadow-2xl overflow-hidden border border-gray-700 relative min-h-[700px] flex flex-col">
+        
+        <div id="timer-container" class="absolute top-6 right-8 flex items-center justify-center hidden">
+            <svg class="w-14 h-14 transform -rotate-90">
+                <circle cx="28" cy="28" r="24" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="transparent" />
+                <circle id="timer-progress" cx="28" cy="28" r="24" stroke="url(#timer-gradient)" stroke-width="4" fill="transparent" 
+                    stroke-dasharray="150.8" stroke-dashoffset="0" stroke-linecap="round" class="transition-all duration-1000 ease-linear" />
+                <defs>
+                    <linearGradient id="timer-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#facc15" />
+                        <stop offset="100%" stop-color="#ec4899" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span id="timer-text" class="absolute text-white font-bold text-sm">50</span>
+        </div>
+
+        <div class="p-8 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="logo-icon w-10 h-10 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl">MQ</div>
+                <span class="text-white font-bold tracking-widest uppercase">My Quizzo</span>
+            </div>
+        </div>
+
+        <div id="display-area" class="flex-grow px-8 pb-8 flex flex-col">
+            </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
